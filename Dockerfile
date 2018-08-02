@@ -36,7 +36,7 @@ RUN rpm --nodeps -e \
         dracut \
         libxml2-python \
 	\
-	policy-coreutils \
+	policycoreutils \
 	rpm-libs \
 	rpm-build-libs \
 	lua
