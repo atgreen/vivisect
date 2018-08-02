@@ -1,6 +1,3 @@
-# This is an example base image derived from RHEL, but configured to
-# look at a Satellite server for content that is different from what
-# the host sees.
 
 FROM registry.access.redhat.com/jboss-webserver-3/webserver31-tomcat8-openshift
 
