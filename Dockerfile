@@ -4,7 +4,6 @@ FROM registry.access.redhat.com/jboss-webserver-3/webserver31-tomcat8-openshift
 USER 0
 
 RUN rpm --nodeps -e \
-    	binutils \
 	curl \
 	dbus-python \
 	gdb-gdbserver \
@@ -28,10 +27,18 @@ RUN rpm --nodeps -e \
 	pyxattr \
 	rpm-python \
 	subscription-manager \
+	subscription-manager-rhsm \
 	subscription-manager-rhsm-certificates \
+	yum \
 	yum-metadata-parser \
 	yum-utils \
+    	binutils \
         dracut \
-        libxml2-python
+        libxml2-python \
+	\
+	policy-coreutils \
+	rpm-libs \
+	rpm-build-libs \
+	lua
 
 USER 1000
